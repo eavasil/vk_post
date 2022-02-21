@@ -7,29 +7,47 @@ public class VkPost {
     //автор записи
     private int date;
     //дата публикации поста
-    private int textPost;
+    private String textPost;
     //текст поста
-    int viewsCount;
-    private Media[]medias;
+    private int friendsOnly;
 
-    public int reposts;
-
-    public class CommentsInfo {
-        private int count;
-        //количество комментов
-        private boolean canPost;
-        // кто может комментировать запись (пользователи)
-        private int canPostGroups;
-        // кто может комментирвоать (группы и сообщества)
-        private boolean canComments;
-    }
-    public class Likes {
-    private int count;
-    //количество лайков
-    private int userLikes;
-    // наличие отместки мне нравится от текущего пользователя
-    private int canRepostPublish;
-    // можно ли делать репост
+    public int getId() {
+        return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCreatorId() {
+        return creatorId;
+    }
+
+    public void setCreatorId(int creatorId) {
+        this.creatorId = creatorId;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
+    public String getTextPost() {
+        return textPost;
+    }
+
+    public void setTextPost(String textPost) {
+        this.textPost = textPost;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
 }
