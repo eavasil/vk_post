@@ -10,6 +10,10 @@ public class VkPost {
     private String textPost;
     //текст поста
     private int friendsOnly;
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private RepostsInfo repostsInfo;
+
 
     public int getId() {
         return id;
@@ -49,5 +53,27 @@ public class VkPost {
 
     public void setFriendsOnly(int friendsOnly) {
         this.friendsOnly = friendsOnly;
+    }
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
     }
 }
